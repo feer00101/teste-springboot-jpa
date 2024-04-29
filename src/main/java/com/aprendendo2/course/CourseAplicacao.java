@@ -1,0 +1,11 @@
+package com.aprendendo2.course;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CourseAplicacao {
+    public static void main(String[] args) {
+        SpringApplication.run(CourseAplicacao.class, args);
+    }
+}

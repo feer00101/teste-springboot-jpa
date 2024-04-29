@@ -1,13 +1,12 @@
-package com.aprendendo2.curso;
+package com.aprendendo2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CursoApplicationTests {
+public class CourseAplicacaoTests {
+    @Test
+    void contextLoads() {
 
-	@Test
-	void contextLoads() {
-	}
-
+    }
 }
