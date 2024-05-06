@@ -1,4 +1,4 @@
-package com.aprendendo2.course.config.pk;
+package com.aprendendo2.course.entities.pk;
 
 import java.io.Serializable;
 
