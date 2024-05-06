@@ -16,6 +16,7 @@ import com.aprendendo2.course.entities.User;
 import com.aprendendo2.course.services.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
 @RequestMapping(value = "/users")
@@ -48,5 +49,12 @@ public class UserResource {
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         service.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User obj) {
+
+        obj = service.update(id, obj);
+        return ResponseEntity.ok().body(obj);
     }
 }
