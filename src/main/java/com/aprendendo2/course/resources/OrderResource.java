@@ -14,7 +14,7 @@ import com.aprendendo2.course.services.OrderService;
 
 @RestController
 @RequestMapping(value = "/orders")
-public class OrderResources {
+public class OrderResource {
     @Autowired
     private OrderService service;
 

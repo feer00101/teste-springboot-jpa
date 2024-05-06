@@ -14,7 +14,7 @@ import com.aprendendo2.course.services.ProductService;
 
 @RestController
 @RequestMapping(value = "/products")
-public class ProductResources {
+public class ProductResource {
     @Autowired
     private ProductService service;
 
